@@ -1,0 +1,226 @@
+body {
+    margin: 0px;
+    background-color: #262726;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color:white;
+}
+
+body a {
+    text-decoration: none;
+    color:red;
+}
+
+body a:hover {
+    text-decoration:underline;
+    color:rgb(161, 228, 205);
+}
+
+nav {
+    background-color: #636363;
+    border: solid 5px rgb(161, 228, 205);
+    display:flex;
+    justify-content: right;
+}
+nav a {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    padding: 10px 10px;
+    text-decoration:none;
+}
+nav a:hover {
+    text-decoration: underline;
+    background-color: #737373;
+}
+
+.mainheading {
+    background-color: rgb(161, 228, 205);
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.mainheading h1 {
+    font-size:60px;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    background-color: rgb(133, 189, 170);
+}
+
+.mainheading h2 {
+    margin-top: 0px;
+    padding-bottom: 10px;
+    padding-top: 2px;
+    font-size:40px;
+    background-color: rgb(145, 212, 190);
+
+}
+
+.intro {
+    background-color: #737373;
+    padding: 10px;
+    color:white;
+    height:400px;
+    margin-bottom: 30px;
+}
+
+.intro #headshot {
+    border-radius: 50%;
+    border: 3px rgb(161, 228, 205) solid;
+    position:absolute;
+    top:305px;
+    left:10px;
+}
+
+.intro #kb {
+    border-radius: 50%;
+    border: 3px rgb(161, 228, 205) solid;
+    position:absolute;
+    top:305px;
+    right:10px;
+}
+
+.introheadings {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.introheadings h2 {
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+
+.introheadings p {
+    font-size: 25px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.container {
+    display:flex;
+    justify-content: space-around;
+}
+
+.three-col {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:80%;
+}
+
+.card {
+    
+    background-color: rgb(133, 189, 170);
+    border: 1px rgb(255, 255, 255) solid;
+    margin:40px;
+    box-shadow: 0 4px 8px 0 white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 white;
+}
+
+.card h3 {
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom:0px;
+    text-align: center;
+}
+
+.card ul {
+    font-size: 25px;
+    display:grid;
+    justify-content: space-around;
+}
+
+.card dl {
+    font-size: 25px;
+    display:grid;
+    justify-content: space-around;
+}
+
+.card img {
+    aspect-ratio: 1 / 1;
+    width:100%;
+    background-color: #875f2a;
+}
+
+.card #skills {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-around;
+}
+
+.card hr {
+    border: 2px white dotted;
+}
+
+footer {
+    background-color: #636363;
+    border: solid 5px #b3b3b3;
+    display:flex;
+    justify-content: center;
+}
+
+footer a {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    padding: 10px 10px;
+    text-decoration:none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background-color: #737373;
+}
+
+hr {
+    border: 30px dotted rgb(161, 228, 205);
+    border-radius: 3%;
+}
+
+.one-col {
+    display:flex;
+    justify-content: space-around;
+}
+
+#contactinfo {
+    text-align: center;
+}
+
+#contactinfo h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 75px;
+    margin-bottom: 0px;
+}
+
+#contactinfo p {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#form {
+    width:50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#form form {
+    display:grid;
+}
+
+#name, #email, #message {
+    border: #262726 2px solid;
+}
+
+#name:hover, #email:hover, #message:hover {
+    background-color: rgb(234, 234, 234);
+}
