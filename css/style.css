@@ -58,26 +58,26 @@ nav a:hover {
 
 .intro {
     background-color: #737373;
-    padding: 10px;
+    padding: 10px 0px;
     color:white;
     height:400px;
     margin-bottom: 30px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
 }
 
 .intro #headshot {
     border-radius: 50%;
     border: 3px rgb(161, 228, 205) solid;
-    position:absolute;
-    top:305px;
-    left:10px;
+    margin-left: 10px;
 }
 
 .intro #kb {
     border-radius: 50%;
     border: 3px rgb(161, 228, 205) solid;
-    position:absolute;
-    top:305px;
-    right:10px;
+    margin-right: 10px;
+    object-fit: cover;
 }
 
 .introheadings {
@@ -86,6 +86,9 @@ nav a:hover {
     justify-content:flex-start;
     text-align: center;
     margin: 0px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .introheadings h2 {
@@ -109,18 +112,21 @@ nav a:hover {
 }
 
 .three-col {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display:flex;
+    justify-content: space-around;
     width:80%;
 }
 
 .card {
-    
+    width:20vw;
     background-color: rgb(133, 189, 170);
     border: 1px rgb(255, 255, 255) solid;
     margin:40px;
     box-shadow: 0 4px 8px 0 white;
     transition: 0.3s;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -132,18 +138,25 @@ nav a:hover {
     margin-top: 0px;
     margin-bottom:0px;
     text-align: center;
+    text-overflow: ellipsis;
 }
 
 .card ul {
-    font-size: 25px;
+    font-size: 1.5rem;
     display:grid;
     justify-content: space-around;
 }
 
 .card dl {
-    font-size: 25px;
+    font-size: 1.5rem;
     display:grid;
     justify-content: space-around;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: auto;
+    padding: 0px 10px;
+    margin: 0px;
+    margin-top: 10px;
 }
 
 .card img {
@@ -154,7 +167,7 @@ nav a:hover {
 
 .card #skills {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 1.5fr;
     justify-content: space-around;
 }
 
